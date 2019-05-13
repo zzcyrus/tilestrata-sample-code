@@ -1,9 +1,9 @@
-var tilestrata = require('tilestrata')
-var disk = require('tilestrata-disk')
-var mapnik = require('tilestrata-mapnik')
-var strata = tilestrata()
+import serverStore from '../util/server'
+const mapnik = require('tilestrata-mapnik')
+const disk = require('tilestrata-disk')
+const server = serverStore()
 
-strata
+server
   .layer('world_merc')
   .route('tile.png')
   .use(disk.cache({ dir: 'tilecache' }))
@@ -12,5 +12,3 @@ strata
       pathname: 'style/stylesheet.xml'
     })
   )
-
-strata.listen(8080)

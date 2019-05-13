@@ -1,3 +1,8 @@
-// import '../image/shp2png'
+import '../mapnik'
+import '../postgis'
 
-import '../mapnik/index'
+import serverStore from '../util/server'
+
+const sever = serverStore()
+
+sever.listen(9527)
