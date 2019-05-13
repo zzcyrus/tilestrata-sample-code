@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>index</title>
+    <link rel="stylesheet" href="./lib/leaflet.css" />
+    <script src="./lib/leaflet-src.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="map" style="width: 100%;height: 100%;"></div>
+
+    <script>
+      const map = L.map("map").setView([33.2987, 126.9578], 4);
+
+      L.tileLayer(
+        "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
+        {
+          maxZoom: 18,
+          id: "mapbox.streets"
+        }
+      ).addTo(map);
+
+      var pngTiles = new L.tileLayer(
+        "http://127.0.0.1:9527/geojson-tiles/{z}/{x}/{y}/tile.png"
+      );
+
+      var jsonLayer = L.geoJson(null, {
+        style: { color: "red" }
+      }).addTo(map);
+
+      pngTiles.on("tileloadstart", function(event) {
+        var jsonString =
+          "http://127.0.0.1:9527/geojson-tiles/" +
+          event.coords.z +
+          "/" +
+          event.coords.x +
+          "/" +
+          event.coords.y +
+          "/tile.json";
+
+        $.getJSON(jsonString, function(json) {
+          jsonLayer.addData(json);
+        });
+      });
+
+      pngTiles.addTo(map);
+    </script>
+  </body>
+</html>
