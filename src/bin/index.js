@@ -1,6 +1,7 @@
 import '../mapnik'
 import '../postgis'
 import '../sharp'
+import '../gm'
 
 import serverStore from '../util/server'
 
