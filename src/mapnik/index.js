@@ -9,6 +9,15 @@ server
   .use(disk.cache({ dir: 'tilecache' }))
   .use(
     mapnik({
-      pathname: 'style/stylesheet.xml'
+      pathname: 'style/world.xml'
+    })
+  )
+
+server
+  .layer('province')
+  .route('tile.png')
+  .use(
+    mapnik({
+      pathname: 'style/province.xml'
     })
   )

@@ -8,7 +8,7 @@ server
   .route('tile.png')
   .use(
     mapnik({
-      pathname: 'style/stylesheet.xml'
+      pathname: 'style/world.xml'
     })
   )
   .use(
