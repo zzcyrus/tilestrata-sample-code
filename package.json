@@ -23,6 +23,7 @@
     "mongoose": "^5.4.0",
     "sharp": "^0.22.1",
     "tilestrata": "^2.1.2",
+    "tilestrata-blend": "^0.3.4",
     "tilestrata-dependency": "^0.5.1",
     "tilestrata-disk": "^0.5.0",
     "tilestrata-gm": "^0.3.0",
