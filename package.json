@@ -28,6 +28,7 @@
     "tilestrata-disk": "^0.5.0",
     "tilestrata-gm": "^0.3.0",
     "tilestrata-headers": "^0.3.0",
+    "tilestrata-jsonp": "^0.1.4",
     "tilestrata-mapnik": "^0.4.1",
     "tilestrata-postgis-geojson-tiles": "0.0.2",
     "tilestrata-sharp": "^1.0.0"

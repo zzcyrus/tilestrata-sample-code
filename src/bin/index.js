@@ -4,6 +4,7 @@ import '../sharp'
 import '../gm'
 import '../dependency'
 import '../blend'
+import '../jsonp'
 
 import serverStore from '../util/server'
 
