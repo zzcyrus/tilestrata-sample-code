@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>index</title>
+    <link rel="stylesheet" href="./lib/leaflet.css" />
+    <script src="./lib/leaflet-src.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="map" style="width: 100%;height: 100%;"></div>
+
+    <script>
+      const map = L.map("map").setView([33.2987, 126.9578], 4);
+
+      const tiles = L.tileLayer(
+        "http://127.0.0.1:9527/osm_pbf_raster/{z}/{x}/{y}/tile.png",
+        {
+          preferCanvas: true
+        }
+      ).addTo(map);
+    </script>
+  </body>
+</html>
