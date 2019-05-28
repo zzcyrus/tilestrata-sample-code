@@ -25,16 +25,16 @@
         }
       ).addTo(map);
 
-      var pngTiles = new L.tileLayer(
+      const pngTiles = new L.tileLayer(
         "http://127.0.0.1:9527/geojson-tiles/{z}/{x}/{y}/tile.png"
       );
 
-      var jsonLayer = L.geoJson(null, {
+      const jsonLayer = L.geoJson(null, {
         style: { color: "red" }
       }).addTo(map);
 
       pngTiles.on("tileloadstart", function(event) {
-        var jsonString =
+        const jsonString =
           "http://127.0.0.1:9527/geojson-tiles/" +
           event.coords.z +
           "/" +
