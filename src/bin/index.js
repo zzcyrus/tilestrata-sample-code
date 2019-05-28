@@ -8,6 +8,10 @@ import '../jsonp'
 
 import serverStore from '../util/server'
 
+// if you want to use vtile disable above import
+// import '../vtile'
+// import '../vtile-raster'
+
 const sever = serverStore()
 
 sever.listen(9527)
