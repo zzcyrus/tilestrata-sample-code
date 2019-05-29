@@ -33,6 +33,7 @@
     "tilestrata-postgis-geojson-tiles": "0.0.2",
     "tilestrata-sharp": "^1.0.0",
     "tilestrata-vtile": "^0.5.3",
+    "tilestrata-vtile-composite": "^0.2.0",
     "tilestrata-vtile-raster": "^0.5.0"
   },
   "devDependencies": {

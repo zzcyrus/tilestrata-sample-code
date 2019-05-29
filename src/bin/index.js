@@ -11,6 +11,7 @@ import serverStore from '../util/server'
 // if you want to use vtile disable above import
 // import '../vtile'
 // import '../vtile-raster'
+// import '../vtile-composite'
 
 const sever = serverStore()
 
