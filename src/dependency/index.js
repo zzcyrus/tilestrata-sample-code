@@ -17,5 +17,5 @@ server
   .route('tile.jpg')
   .use(dependency('world_merc_png', 'tile.png'))
 
-// http://127.0.0.1:9527/world_merc_png/4/13/8/tile.jpg
-//  http://127.0.0.1:9527/world_merc_png/4/13/8/tile.png
+// test http://127.0.0.1:9527/world_merc_png/4/13/8/tile.jpg
+// test http://127.0.0.1:9527/world_merc_png/4/13/8/tile.png

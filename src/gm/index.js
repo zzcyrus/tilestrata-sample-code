@@ -19,4 +19,4 @@ server
 
 gm.setMaxConcurrency(2)
 
-// http://127.0.0.1:9527/world_merc/4/13/8/tile.png
+// test http://127.0.0.1:9527/world_merc_gm/4/13/8/tile.png

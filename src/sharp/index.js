@@ -19,3 +19,5 @@ server
         .greyscale()
     })
   )
+
+// test http://127.0.0.1:9527/world_merc_sharp/4/13/8/tile.png
