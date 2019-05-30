@@ -2,9 +2,9 @@ import serverStore from '../util/server'
 const jsonp = require('tilestrata-jsonp')
 const tilestrataPostGISGeoJSON = require('tilestrata-postgis-geojson-tiles')
 
-const sever = serverStore()
+const server = serverStore()
 
-sever
+server
   .layer('geojson_tiles_jsonp')
   .route('tile.json')
   .use(jsonp({ variable: 'callback' }))

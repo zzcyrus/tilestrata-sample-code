@@ -3,9 +3,9 @@ const tilestrataPostGISGeoJSON = require('tilestrata-postgis-geojson-tiles')
 const headers = require('tilestrata-headers')
 const disk = require('tilestrata-disk')
 
-const sever = serverStore()
+const server = serverStore()
 
-sever
+server
   .layer('geojson-tiles')
   .route('tile.json')
   .use(
