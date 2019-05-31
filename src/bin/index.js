@@ -6,6 +6,7 @@ import '../dependency'
 import '../blend'
 import '../jsonp'
 import '../lru'
+import '../underzoom'
 
 import serverStore from '../util/server'
 
