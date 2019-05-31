@@ -5,6 +5,7 @@ import '../gm'
 import '../dependency'
 import '../blend'
 import '../jsonp'
+import '../lru'
 
 import serverStore from '../util/server'
 
@@ -13,6 +14,6 @@ import serverStore from '../util/server'
 // import '../vtile-raster'
 // import '../vtile-composite'
 
-const sever = serverStore()
+const server = serverStore()
 
-sever.listen(9527)
+server.listen(9527)
