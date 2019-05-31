@@ -7,6 +7,7 @@ import '../blend'
 import '../jsonp'
 import '../lru'
 import '../underzoom'
+import '../etag'
 
 import serverStore from '../util/server'
 

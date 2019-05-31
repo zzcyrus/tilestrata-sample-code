@@ -26,6 +26,7 @@
     "tilestrata-blend": "^0.3.4",
     "tilestrata-dependency": "^0.5.1",
     "tilestrata-disk": "^0.5.0",
+    "tilestrata-etag": "^0.1.1",
     "tilestrata-gm": "^0.3.0",
     "tilestrata-headers": "^0.3.0",
     "tilestrata-jsonp": "^0.1.4",
