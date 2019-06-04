@@ -8,6 +8,7 @@ import '../jsonp'
 import '../lru'
 import '../underzoom'
 import '../etag'
+import '../mvt'
 
 import serverStore from '../util/server'
 

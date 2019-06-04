@@ -33,6 +33,7 @@
     "tilestrata-lru": "^0.2.0",
     "tilestrata-mapnik": "^0.4.1",
     "tilestrata-postgis-geojson-tiles": "0.0.2",
+    "tilestrata-postgismvt": "github:Stezii/tilestrata-postgismvt",
     "tilestrata-sharp": "^1.0.0",
     "tilestrata-underzoom": "^1.3.0",
     "tilestrata-vtile": "^0.5.3",
