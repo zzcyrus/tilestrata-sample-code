@@ -16,4 +16,16 @@ npm install
 npm start
 ```
 
+# Windows
+
+lock `mapnik` version to `3.6.2` or build latest version by yourself
+
+```
+"dependencies": {
+    "mapnik": "3.6.2",
+}
+```
+
+# Test
+
 Then open html in `example` folder to see result.
