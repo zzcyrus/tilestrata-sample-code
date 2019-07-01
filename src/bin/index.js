@@ -1,5 +1,5 @@
 import '../mapnik'
-import '../postgis'
+import '../geojson'
 import '../sharp'
 import '../gm'
 import '../dependency'
