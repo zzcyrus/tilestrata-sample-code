@@ -66,6 +66,6 @@ server
     })
   )
 
-// test http://127.0.0.1:9527/lru_layer_size/4/13/8/tile.png
-// test http://127.0.0.1:9527/lru_layer_number/4/13/8/tile.png
-// test http://127.0.0.1:9527/lru_layer_key/4/13/8/tile.png
+// test http://127.0.0.1:9527/lru_layer_size/4/12/6/tile.png
+// test http://127.0.0.1:9527/lru_layer_number/4/12/6/tile.png
+// test http://127.0.0.1:9527/lru_layer_key/4/12/6/tile.png
